@@ -56,15 +56,47 @@
 		E3BDD5A2262456FB006F7478 /* Bin2Dec */ = {
 			isa = PBXGroup;
 			children = (
-				E3BDD5A3262456FB006F7478 /* AppDelegate.swift */,
-				E3BDD5A5262456FB006F7478 /* SceneDelegate.swift */,
-				E3BDD5A7262456FB006F7478 /* ViewController.swift */,
-				E3BDD5A9262456FB006F7478 /* Main.storyboard */,
-				E3BDD5AC262456FF006F7478 /* Assets.xcassets */,
-				E3BDD5AE262456FF006F7478 /* LaunchScreen.storyboard */,
-				E3BDD5B1262456FF006F7478 /* Info.plist */,
+				E3BDD5BA262457C5006F7478 /* ViewControllers */,
+				E3BDD5B9262457A3006F7478 /* Storyboards */,
+				E3BDD5BC26245807006F7478 /* Supporting */,
+				E3BDD5BB262457FB006F7478 /* Resources */,
 			);
 			path = Bin2Dec;
+			sourceTree = "<group>";
+		};
+		E3BDD5B9262457A3006F7478 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDD5A9262456FB006F7478 /* Main.storyboard */,
+				E3BDD5AE262456FF006F7478 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E3BDD5BA262457C5006F7478 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDD5A7262456FB006F7478 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E3BDD5BB262457FB006F7478 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDD5AC262456FF006F7478 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E3BDD5BC26245807006F7478 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDD5A3262456FB006F7478 /* AppDelegate.swift */,
+				E3BDD5A5262456FB006F7478 /* SceneDelegate.swift */,
+				E3BDD5B1262456FF006F7478 /* Info.plist */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,15 +320,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SK72H5U39;
-				INFOPLIST_FILE = Bin2Dec/Info.plist;
+				INFOPLIST_FILE = Bin2Dec/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apoluyanovich.Bin2Dec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,15 +340,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SK72H5U39;
-				INFOPLIST_FILE = Bin2Dec/Info.plist;
+				INFOPLIST_FILE = Bin2Dec/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apoluyanovich.Bin2Dec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
