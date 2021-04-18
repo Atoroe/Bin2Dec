@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3A2FD4D2628488300609A21 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2FD4C2628488300609A21 /* UIView + Extension.swift */; };
 		E3BDD5A4262456FB006F7478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5A3262456FB006F7478 /* AppDelegate.swift */; };
 		E3BDD5A6262456FB006F7478 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5A5262456FB006F7478 /* SceneDelegate.swift */; };
 		E3BDD5A8262456FB006F7478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5A7262456FB006F7478 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3A2FD4C2628488300609A21 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		E3BDD5A0262456FB006F7478 /* Bin2Dec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bin2Dec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BDD5A3262456FB006F7478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3BDD5A5262456FB006F7478 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3A2FD4B2628483700609A21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3A2FD4C2628488300609A21 /* UIView + Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E3BDD597262456FB006F7478 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		E3BDD5A2262456FB006F7478 /* Bin2Dec */ = {
 			isa = PBXGroup;
 			children = (
+				E3A2FD4B2628483700609A21 /* View */,
 				E3BDD5BA262457C5006F7478 /* ViewControllers */,
 				E3BDD5B9262457A3006F7478 /* Storyboards */,
 				E3BDD5BC26245807006F7478 /* Supporting */,
@@ -169,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A2FD4D2628488300609A21 /* UIView + Extension.swift in Sources */,
 				E3BDD5A8262456FB006F7478 /* ViewController.swift in Sources */,
 				E3BDD5A4262456FB006F7478 /* AppDelegate.swift in Sources */,
 				E3BDD5A6262456FB006F7478 /* SceneDelegate.swift in Sources */,
