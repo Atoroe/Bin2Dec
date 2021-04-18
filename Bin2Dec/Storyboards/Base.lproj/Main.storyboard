@@ -33,6 +33,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2T-Xl-nfa">
                                         <rect key="frame" x="0.0" y="188" width="343" height="41"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="getAnswer" destination="HkK-ev-gJL" eventType="touchUpInside" id="YG3-4N-9VA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -46,6 +49,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="binTextField" destination="345-40-FGa" id="cBI-yr-29w"/>
+                        <outlet property="decLabel" destination="nZw-84-mn5" id="2uV-Bk-ww5"/>
                         <outlet property="mainStackView" destination="8Lv-Wy-Kav" id="hn6-4L-mPM"/>
                     </connections>
                 </viewController>
