@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         initMenu()
+        addDoneButtonOnKeyboard()
         binTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
     }
     
@@ -77,6 +78,23 @@ extension ViewController: UITextFieldDelegate {
             showAlert()
             view.endEditing(true)
         }
+    }
+    
+    func addDoneButtonOnKeyboard(){
+        let doneToolbar = UIToolbar()
+        doneToolbar.sizeToFit()
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
+        
+        let Items = [flexSpace, done]
+        doneToolbar.setItems(Items, animated: true)
+        
+        binTextField.inputAccessoryView = doneToolbar
+    }
+    
+    @objc func doneButtonAction() {
+        getAnswer()
+        view.endEditing(true)
     }
 }
 
