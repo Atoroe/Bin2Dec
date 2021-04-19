@@ -17,41 +17,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="8Lv-Wy-Kav">
-                                <rect key="frame" x="16" y="120" width="343" height="229"/>
+                                <rect key="frame" x="60" y="120" width="255" height="262"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter binary digits" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="345-40-FGa">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="only 0 or 1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="345-40-FGa">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="52"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="HkK-ev-gJL" id="5ew-hf-MQm"/>
+                                        </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZw-84-mn5">
-                                        <rect key="frame" x="0.0" y="94" width="343" height="41"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter binary number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZw-84-mn5">
+                                        <rect key="frame" x="0.0" y="105" width="255" height="52"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2T-Xl-nfa">
-                                        <rect key="frame" x="0.0" y="188" width="343" height="41"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="210" width="255" height="52"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="26"/>
+                                        <state key="normal" title="SOLVE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="getAnswer" destination="HkK-ev-gJL" eventType="touchUpInside" id="YG3-4N-9VA"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="262" id="0Jm-SK-Hd9"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JVA-4c-J1b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JVA-4c-J1b" firstAttribute="trailing" secondItem="8Lv-Wy-Kav" secondAttribute="trailing" constant="16" id="Ak0-xt-Vf0"/>
+                            <constraint firstItem="JVA-4c-J1b" firstAttribute="trailing" secondItem="8Lv-Wy-Kav" secondAttribute="trailing" constant="60" id="Ak0-xt-Vf0"/>
                             <constraint firstItem="8Lv-Wy-Kav" firstAttribute="top" secondItem="JVA-4c-J1b" secondAttribute="top" constant="120" id="ITl-dl-Oja"/>
-                            <constraint firstItem="8Lv-Wy-Kav" firstAttribute="leading" secondItem="JVA-4c-J1b" secondAttribute="leading" constant="16" id="W0A-sw-i7s"/>
+                            <constraint firstItem="8Lv-Wy-Kav" firstAttribute="leading" secondItem="JVA-4c-J1b" secondAttribute="leading" constant="60" id="W0A-sw-i7s"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="binTextField" destination="345-40-FGa" id="cBI-yr-29w"/>
                         <outlet property="decLabel" destination="nZw-84-mn5" id="2uV-Bk-ww5"/>
                         <outlet property="mainStackView" destination="8Lv-Wy-Kav" id="hn6-4L-mPM"/>
+                        <outlet property="solveButton" destination="v2T-Xl-nfa" id="F02-Ke-jhw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eC3-cm-4UH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

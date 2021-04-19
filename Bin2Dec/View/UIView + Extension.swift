@@ -9,7 +9,7 @@ extension UIView {
         self.layer.cornerRadius = radius
     }
     
-    func dropShadow(shadowColor: UIColor?) {
+    func dropShadow(shadowColor: UIColor? = .black) {
         self.layer.masksToBounds = false
         self.layer.shadowColor = shadowColor?.cgColor ?? UIColor.black.cgColor
         self.layer.shadowOpacity = 0.5
