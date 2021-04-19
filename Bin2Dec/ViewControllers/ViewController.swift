@@ -52,6 +52,17 @@ extension ViewController {
         solveButton.dropShadow()
         binTextField.dropShadow()
     }
+    
+    private func showAlert() {
+        let alert = UIAlertController(
+                                      title: "Out of range!",
+                                      message: "8 is the maximum digit of a number",
+                                      preferredStyle: .alert
+                                      )
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
 }
 //MARK: textField extensions
 extension ViewController: UITextFieldDelegate {
@@ -60,11 +71,11 @@ extension ViewController: UITextFieldDelegate {
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        if textField.text?.count == 8 {
-            view.endEditing(true)
-        }
         if textField.text!.isEmpty {
             decLabel.text = "Enter binary number"
+        } else if let text = textField.text, text.count > 7 {
+            showAlert()
+            view.endEditing(true)
         }
     }
 }
